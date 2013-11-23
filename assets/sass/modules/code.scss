@@ -1,0 +1,27 @@
+// code.scss
+
+pre {
+	display: block;
+	width: 100%;
+	position: relative;
+
+}
+code {
+	display: block;
+	border: 1px solid $colour-divider;
+	padding: $padding;
+	background: $colour-divider;
+	border-radius: $border-radius;
+	padding: $padding;
+	@include box-sizing(border-box);
+
+	@media($small) {
+		width: 120%;
+		margin-left: -10%;
+	}
+
+	@media($medium) {
+		width: 150%;
+		margin-left: -25%;
+	}
+}

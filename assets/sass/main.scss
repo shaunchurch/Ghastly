@@ -12,11 +12,18 @@
 @import "base";
 
 // modules
+@import "modules/fonts";
 @import "modules/typography";
 @import "modules/layout";
 @import "modules/header";
-@import "modules/articles";
+@import "modules/post";
 @import "modules/pagination";
+@import "modules/images";
+@import "modules/code";
+@import "modules/tags";
+@import "modules/blockquote";
+@import "modules/footer";
+@import "modules/utilities";
 
 // debug styles
 // @import "modules/debug";

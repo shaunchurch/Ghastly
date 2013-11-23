@@ -1,8 +1,8 @@
 window.ghastly = (function( ghastly, $, document, undefined ) {
 
-  'use strict';
+    'use strict';
 
-  var me = ghastly.utils = ghastly.utils || {};
+    var me = ghastly.utils = ghastly.utils || {};
 
     me.init = function() {
 
@@ -29,6 +29,13 @@ window.ghastly = (function( ghastly, $, document, undefined ) {
 
     };
 
-  return ghastly;
+    me.isTouchDevice = function() {
+        function is_touch_device() {
+          return 'ontouchstart' in window // works on most browsers 
+              || 'onmsgesturechange' in window; // works on ie10
+        };
+    }
+
+    return ghastly;
 
 })( window.ghastly || {}, jQuery, window.document );

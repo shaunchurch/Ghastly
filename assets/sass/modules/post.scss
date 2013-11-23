@@ -1,0 +1,45 @@
+// article.scss
+
+#blog-logo {
+	float: left;
+}
+.nav-home {
+	float: right;
+}
+
+article.post {
+	margin-bottom: $line-height;
+}
+
+article .post-meta {
+	display: block;
+	font-size: $font-size / 1.5;
+	padding-top: 0.75em;
+	margin-bottom: -0.8em;
+
+	// set hidden by default
+	opacity: 0;
+	@include transition( opacity $animation-speed-slow);
+}
+// is-touch
+.is-touch article .post-meta {
+	opacity: 1;
+}
+// state: in-proximity
+article.in-proximity .post-meta, // homepage
+.in-proximity.post-meta {		 // post page
+	opacity: 1;
+}
+
+article .post-excerpt {
+	overflow: auto;
+}
+
+section.author {
+	// background: $colour-divider;
+	margin: 0 -2.5%;
+	width: 105%;
+	padding: 0 2.5%;
+	border-top: 1px solid $colour-divider;
+	border-bottom: 1px solid $colour-divider;
+}

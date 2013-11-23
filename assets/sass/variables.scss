@@ -3,6 +3,7 @@
 // colours
 $colour-text-default:	 #666;
 $colour-text-header:     #222;
+$colour-text-light: 	 #bbb;
 
 $colour-link-primary: 	 #000; // #bb3b28;
 
@@ -17,12 +18,19 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 
 // font defaults
 $font-size: 18px;
+$font-size-small: $font-size * .8;
+$font-size-large: $font-size * 1.1;
+$font-size-xlarge: $font-size * 1.25;
+$font-size-xxlarge: $font-size * 1.3;
+
 $line-height: 1.5em;
 
 // layout
 $padding: $line-height;
 $max-width: 50em;
 $max-width-text: 35em;
+$border-radius: 5px;
+$border-radius-inner: 3px;
 
 // animations
 $animation-speed-slow: 750ms;
@@ -42,7 +50,7 @@ $tiny-width: 30em;
 $small-width: 50em;
 $medium-width: 62em;
 $large-width: 74em;
-$massive-width: 90	em;
+$massive-width: 90em;
 
 $tiny:		"min-width: #{$tiny-width}";
 $small: 	"min-width: #{$small-width}";

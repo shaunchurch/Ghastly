@@ -19,20 +19,25 @@ header.site-head {
 	text-align: center;
 }
 
+.post-header.is-index {
+	opacity: .6;
+}
 .post-header {
 	@include transition(opacity $animation-speed-medium);
-	opacity: .4;
+	opacity: .1;
 	padding-top: 1.5em;
-
-	&.in-proximity {
-		opacity: 1;
-	}
+	overflow: auto;
 
 	.blog-title {
 		display: block;
 		padding-top: 0.35em;
 		margin-bottom: 1.15em;
 	}
+}
+
+.in-proximity .post-header,
+.in-proximity.post-header {
+	opacity: 1;
 }
 
 .blog-description {

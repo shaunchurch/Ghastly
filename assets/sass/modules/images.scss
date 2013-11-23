@@ -1,0 +1,15 @@
+// images.scss
+
+img {
+	width: 100%;
+
+	@media($small) {
+		margin-left: -10%;
+		width: 120%;
+	}
+
+	@media($medium) {
+		margin-left: -25%;
+		width: 150%;
+	}
+}

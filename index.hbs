@@ -21,9 +21,16 @@
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
-    <article class="{{post_class}}">
-        <header class="post-header" data-proximity="200">
-            <span class="post-meta" data-proximity="200"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+    <article class="{{post_class}}" data-proximity="100">
+        <header class="post-header is-index" >
+            <span class="post-meta">
+                <time datetime="{{date format='YYYY-MM-DD'}}"><i class="icon-clock"></i> {{date format="DD MMM YYYY"}}</time> 
+                <div class="tags">
+                <i class="icon-tag"></i>
+                    {{tags prefix="" separator=" • " }}
+                </div>
+            </span>
+
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
         </header>
