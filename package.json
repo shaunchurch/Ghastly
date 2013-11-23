@@ -1,0 +1,25 @@
+{
+  "name": "ghastly",
+  "version": "0.0.0",
+  "description": "A theme for [Ghost](http://github.com/tryghost/ghost/).",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shaunchurch/Ghastly"
+  },
+  "author": "Shaun Church",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaunchurch/Ghastly/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-sass": "~0.5.1"
+  }
+}

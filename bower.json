@@ -1,0 +1,21 @@
+{
+  "name": "ghastly",
+  "version": "0.0.0",
+  "authors": [
+    "Shaun Church <shaun@shaunchurch.com>"
+  ],
+  "description": "ghost theme",
+  "main": "default.hbs",
+  "license": "MIT",
+  "homepage": "ghastly.shaunchurch.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
+}
