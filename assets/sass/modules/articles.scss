@@ -1,5 +1,21 @@
 // article.scss
 
+
 article.post {
-	margin-bottom: $padding*2;
+	margin-bottom: $line-height;
+}
+
+article .post-title {
+	// line-height: $line-height * 2;
+	// font-size: $font-size * 1.5;
+}
+
+article .post-meta {
+	display: block;
+	font-size: $font-size / 1.5;
+	line-height: 1rem
+}
+
+article .post-excerpt {
+	overflow: auto;
 }

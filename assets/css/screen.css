@@ -343,11 +343,29 @@ body {
   float: left; }
 
 body {
+  background: white; }
+  @media (min-width: 30em) {
+    body {
+      background: red; } }
+  @media (min-width: 50em) {
+    body {
+      background: blue; } }
+  @media (min-width: 62em) {
+    body {
+      background: green; } }
+  @media (min-width: 74em) {
+    body {
+      background: pink; } }
+  @media (min-width: 90em) {
+    body {
+      background: gold; } }
+
+body {
   color: #666666;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  line-height: 1.6em;
-  font-weight: 300; }
+  line-height: 1.5em;
+  font-weight: 200; }
 
 h1,
 h2,
@@ -357,8 +375,36 @@ h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
-  font-weight: 500;
-  line-height: 1.2em; }
+  font-weight: 200;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.35em;
+  padding-top: 0.3em;
+  margin-bottom: 0.35em; }
+
+h2 {
+  font-size: 1.5em;
+  padding-top: .63em;
+  line-height: 2em;
+  margin-bottom: 0.4em;
+  font-weight: 400; }
+
+h3 {
+  padding-top: 0.25em;
+  margin-bottom: -0.25em;
+  font-weight: 400; }
+
+h4 {
+  padding-top: 0.4em;
+  margin-bottom: -0.4em; }
+
+p {
+  margin: 0 0 1.1em 0;
+  padding-top: 0.4em;
+  line-height: 1.5em; }
 
 a {
   -webkit-transition: all 250ms;
@@ -369,34 +415,44 @@ a {
   a:hover {
     color: #672016; }
 
-h1 {
-  font-size: 2.5em; }
-
 header, footer {
-  max-width: 35em;
   margin: 0 auto; }
 
 .content {
   max-width: 35em;
   margin: 0 auto;
-  padding: 0 2em; }
-  @media (min-width: 768px) {
+  padding: 0 1.5em; }
+  @media (min-width: 50em) {
     .content {
       padding: 0; } }
 
 header.site-head {
-  margin-bottom: 4em; }
-
-.blog-title {
-  text-align: center;
-  margin-bottom: 0.5em; }
+  margin-bottom: 3em;
+  padding: 1.5em 0 3em 0;
+  overflow: auto;
+  border-bottom: 1px solid whitesmoke;
+  background-size: 200% 100%;
+  background-position: center;
+  background-repeat: repeat-x; }
+  @media (min-width: 50em) {
+    header.site-head {
+      background-size: 100%;
+      background-position: top; } }
 
 .blog-description {
   font-weight: 200;
-  color: #aaa;
-  font-size: 1em;
-  text-align: center;
-  margin: 0; }
+  color: #aaa; }
 
 article.post {
-  margin-bottom: 4em; }
+  margin-bottom: 1.5em; }
+
+article .post-meta {
+  display: block;
+  font-size: 12px;
+  line-height: 1rem; }
+
+article .post-excerpt {
+  overflow: auto; }
+
+.pagination {
+  text-align: center; }

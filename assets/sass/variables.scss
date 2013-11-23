@@ -6,16 +6,21 @@ $colour-text-header:     #222;
 
 $colour-link-primary: 	 #bb3b28;
 
+$colour-header-from: 	#fff;
+$colour-header-to: 		#fff;
+
+$colour-divider: #f5f5f5;
+
 // font families
 $font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 
 // font defaults
-$font-base-size: 18px;
-$line-height-base: 1.6em;
+$font-size: 18px;
+$line-height: 1.5em;
 
 // layout
-$padding: 2em;
+$padding: $line-height;
 $max-width: 50em;
 $max-width-text: 35em;
 
@@ -25,15 +30,23 @@ $animation-speed-medium: 500ms;
 $animation-speed-fast: 250ms;
 
 // media queries
-$tiny-width: 480px;
-$small-width: 768px;
-$medium-width: 992px;
-$large-width: 1200px;
+// $tiny-width: 480px;
+// $small-width: 768px;
+// $medium-width: 992px;
+// $large-width: 1200px;
+
+// ems
+$tiny-width: 30em;
+$small-width: 50em;
+$medium-width: 62em;
+$large-width: 74em;
+$massive-width: 90em;
 
 $tiny:		"min-width: #{$tiny-width}";
 $small: 	"min-width: #{$small-width}";
 $medium:	"min-width: #{$medium-width}";
 $large:		"min-width: #{$large-width}";
+$massive:	"min-width: #{$massive-width}";
 
 $highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
               "only screen and (min--moz-device-pixel-ratio: 1.5)",

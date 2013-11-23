@@ -7,10 +7,13 @@
 @import "lib/normalize";
 @import "lib/grid";
 
+// core
 @import "variables";
 @import "base";
 
+// modules
 @import "modules/typography";
 @import "modules/layout";
 @import "modules/header";
 @import "modules/articles";
+@import "modules/pagination";

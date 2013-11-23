@@ -2,17 +2,28 @@
 
 header.site-head {
 	margin-bottom: $padding*2;
+	padding: $padding 0 $padding*2 0;
+	overflow: auto;
+	// @include linear-gradient($colour-header-from, $colour-header-to);
+	border-bottom: 1px solid $colour-divider;
+	background-size: 200% 100%;
+	background-position: center;
+	background-repeat: repeat-x;
+
+	@media($small) {
+		background-size: 100%;
+		background-position: top;
+	}
 }
 
 .blog-title {
-	text-align: center;
-	margin-bottom: $padding/4;
+	// text-align: center;
+
 }
 
 .blog-description {
 	font-weight: 200;
 	color: #aaa;
-	font-size: 1em;
-	text-align: center;
-	margin: 0;
+	// font-size: 1em;
+	// text-align: center;
 }

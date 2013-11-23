@@ -3,9 +3,9 @@
 body {
 	color: $colour-text-default;
 	font-family: $font-family-serif;
-	font-size: $font-base-size;
-	line-height: $line-height-base;
-	font-weight: 300;
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: 200;
 }
 
 h1,
@@ -16,10 +16,45 @@ h5,
 h6 {
 	font-family: $font-family-sans;
 	color: $colour-text-header;
-	font-weight: 500;
-	line-height: 1.2em;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
 }
 
+// sizes
+h1 {
+	font-size: $line-height * 1.5;
+	line-height: 1.35em;
+	padding-top: 0.3em;
+	margin-bottom: 0.35em;
+}
+
+h2 {
+	font-size: $line-height;
+	padding-top: .63em;
+	line-height: 2em;
+	margin-bottom: 0.4em;
+	font-weight: 400;
+}
+
+h3 {
+	padding-top: 0.25em;
+	// line-height: 1em;
+	margin-bottom: -0.25em;
+	font-weight: 400;
+}
+
+h4 {
+	padding-top: 0.4em;
+	margin-bottom: -0.4em;
+}
+
+// paragraph
+p {
+	margin: 0 0 1.1em 0;
+	padding-top: 0.4em;
+	line-height: $line-height;
+}
 // links
 a {
 	@include transition( all $animation-speed-fast );
@@ -29,9 +64,4 @@ a {
 	&:hover {
 		color: darken($colour-link-primary, 20%);
 	}
-}
-
-// sizes
-h1 {
-	font-size: 2.5em;
 }
