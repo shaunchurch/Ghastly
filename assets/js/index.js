@@ -1,15 +1,17 @@
-/**
- * Main JS file for Casper behaviours
- */
+// app
+window.ghastly = (function( ghastly, $, document, undefined ) {
 
-/*globals jQuery, document */
-(function ($) {
-    "use strict";
+  var init;
 
-    $(document).ready(function(){
+  init = function() {
 
+    if(ghastly.utils) ghastly.utils.init();
+    if(ghastly.header) ghastly.header.init();
 
+  };
 
-    });
+  $( document ).ready( init ); //kick off
 
-}(jQuery));
+  return ghastly;
+
+})( window.ghastly || {}, jQuery, window.document );

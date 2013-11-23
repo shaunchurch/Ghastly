@@ -11,7 +11,7 @@ A theme for [Ghost](http://github.com/tryghost/ghost/).
 	$ bower install
 	$ grunt
 
-	Then restart ghost. The theme should appear in the dropdown on your settings menu at http://yoursite.com/ghost
+Then restart ghost. The theme should appear in the dropdown on your settings menu at http://yoursite.com/ghost
 
 ## Copyright & License
 
