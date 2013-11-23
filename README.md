@@ -3,6 +3,16 @@
 
 A theme for [Ghost](http://github.com/tryghost/ghost/).
 
+## Installation
+
+	$ git clone https://github.com/shaunchurch/Ghastly.git /path/to/ghost/content/themes
+	$ cd /path/to/ghost/content/themes/ghastly
+	$ npm install
+	$ bower install
+	$ grunt
+
+	Then restart ghost. The theme should appear in the dropdown on your settings menu at http://yoursite.com/ghost
+
 ## Copyright & License
 
 Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
