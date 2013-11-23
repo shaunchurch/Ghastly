@@ -1,5 +1,9 @@
 // Ghastly 0.1
 
+// bourbon
+@import "../../bower_components/bower-bourbon/_bourbon.scss";
+
+// vendor libraries
 @import "lib/normalize";
 @import "lib/grid";
 
@@ -7,5 +11,6 @@
 @import "base";
 
 @import "modules/typography";
-
 @import "modules/layout";
+@import "modules/header";
+@import "modules/articles";

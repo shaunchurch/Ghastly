@@ -18,3 +18,26 @@ $line-height-base: 1.6em;
 $padding: 2em;
 $max-width: 50em;
 $max-width-text: 35em;
+
+// animations
+$animation-speed-slow: 750ms;
+$animation-speed-medium: 500ms;
+$animation-speed-fast: 250ms;
+
+// media queries
+$tiny-width: 480px;
+$small-width: 768px;
+$medium-width: 992px;
+$large-width: 1200px;
+
+$tiny:		"min-width: #{$tiny-width}";
+$small: 	"min-width: #{$small-width}";
+$medium:	"min-width: #{$medium-width}";
+$large:		"min-width: #{$large-width}";
+
+$highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              "only screen and (min--moz-device-pixel-ratio: 1.5)",
+              "only screen and (-o-min-device-pixel-ratio: 3/2)",
+              "only screen and (min-device-pixel-ratio: 1.5)";
+
+

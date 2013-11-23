@@ -361,6 +361,9 @@ h6 {
   line-height: 1.2em; }
 
 a {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  transition: all 250ms;
   color: #bb3b28;
   text-decoration: none; }
   a:hover {
@@ -375,4 +378,25 @@ header, footer {
 
 .content {
   max-width: 35em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2em; }
+  @media (min-width: 768px) {
+    .content {
+      padding: 0; } }
+
+header.site-head {
+  margin-bottom: 4em; }
+
+.blog-title {
+  text-align: center;
+  margin-bottom: 0.5em; }
+
+.blog-description {
+  font-weight: 200;
+  color: #aaa;
+  font-size: 1em;
+  text-align: center;
+  margin: 0; }
+
+article.post {
+  margin-bottom: 4em; }
