@@ -1,6 +1,5 @@
 // article.scss
 
-
 article.post {
 	margin-bottom: $line-height;
 }
@@ -13,7 +12,15 @@ article .post-title {
 article .post-meta {
 	display: block;
 	font-size: $font-size / 1.5;
-	line-height: 1rem
+	padding-top: 0.75em;
+	margin-bottom: -0.8em;
+	opacity: 0;
+	@include transition( opacity $animation-speed-slow);
+
+	&.in-proximity {
+		opacity: 1;
+	}
+
 }
 
 article .post-excerpt {

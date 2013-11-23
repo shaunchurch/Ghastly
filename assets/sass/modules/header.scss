@@ -15,10 +15,24 @@ header.site-head {
 		background-position: top;
 	}
 }
+.site-head {
+	text-align: center;
+}
 
-.blog-title {
-	// text-align: center;
+.post-header {
+	@include transition(opacity $animation-speed-medium);
+	opacity: .4;
+	padding-top: 1.5em;
 
+	&.in-proximity {
+		opacity: 1;
+	}
+
+	.blog-title {
+		display: block;
+		padding-top: 0.35em;
+		margin-bottom: 1.15em;
+	}
 }
 
 .blog-description {

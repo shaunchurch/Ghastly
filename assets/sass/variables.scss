@@ -4,7 +4,7 @@
 $colour-text-default:	 #666;
 $colour-text-header:     #222;
 
-$colour-link-primary: 	 #bb3b28;
+$colour-link-primary: 	 #000; // #bb3b28;
 
 $colour-header-from: 	#fff;
 $colour-header-to: 		#fff;
@@ -30,6 +30,8 @@ $animation-speed-medium: 500ms;
 $animation-speed-fast: 250ms;
 
 // media queries
+
+// pixels
 // $tiny-width: 480px;
 // $small-width: 768px;
 // $medium-width: 992px;
@@ -40,7 +42,7 @@ $tiny-width: 30em;
 $small-width: 50em;
 $medium-width: 62em;
 $large-width: 74em;
-$massive-width: 90em;
+$massive-width: 90	em;
 
 $tiny:		"min-width: #{$tiny-width}";
 $small: 	"min-width: #{$small-width}";

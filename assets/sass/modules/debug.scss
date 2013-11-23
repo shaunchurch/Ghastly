@@ -3,26 +3,26 @@ body {
 
 	@include baseline-grid;
 
-	background: white;
+	// background: #FFFFFF;
 
-	@media($tiny) {
-		background: red;
-	}
+	// @media($tiny) {
+	// 	background: #FFFF00;
+	// }
 
-	@media($small) {
-		background: blue;
-	}
+	// @media($small) {
+	// 	background: #EE33EE;
+	// }
 
-	@media($medium) {
-		background: green;
-	}
+	// @media($medium) {
+	// 	background: #22FFAA;
+	// }
 
-	@media($large) {
-		background: pink;
-	}
+	// @media($large) {
+	// 	background: hotpink;
+	// }
 
-	@media($massive) {
-		background: gold;
-	}
+	// @media($massive) {
+	// 	background: gold;
+	// }
 
 }

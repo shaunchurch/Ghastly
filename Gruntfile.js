@@ -20,8 +20,10 @@ module.exports = function(grunt) {
           console: true,
           module: true,
           document: true
-        }
-      }
+        },
+        ignores: ['assets/js/lib/*']
+      },
+
     },
     sass: {
       dist: {

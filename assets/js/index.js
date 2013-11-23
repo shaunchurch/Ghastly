@@ -7,6 +7,7 @@ window.ghastly = (function( ghastly, $, document, undefined ) {
 
     if(ghastly.utils) ghastly.utils.init();
     if(ghastly.header) ghastly.header.init();
+    if(ghastly.proximity) ghastly.proximity.init();
 
   };
 
