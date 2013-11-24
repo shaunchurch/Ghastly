@@ -3,6 +3,7 @@
 #blog-logo {
 	float: left;
 }
+
 .nav-home {
 	float: right;
 }
@@ -18,7 +19,7 @@ article .post-meta {
 	margin-bottom: -0.8em;
 
 	// set hidden by default
-	opacity: 0;
+	// opacity: .6;
 	@include transition( opacity $animation-speed-slow);
 }
 // is-touch
@@ -46,14 +47,14 @@ section.author {
 
 main.content.post-inset {
 
-	position: relative;
-	top: -17.5em;
-	background: white;
-	@include linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,1) 10em);
-	padding: 0 $padding;
-	border-radius: $border-radius;
+	// position: relative;
+	// top: -17.5em;
+	// background: white;
+	// @include linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,1) 10em);
+	// padding: 0 $padding;
+	// border-radius: $border-radius;
 
 	@media($small) {
-		padding: 0 $padding*2;
+		// padding: 0 $padding*2;
 	}
 }

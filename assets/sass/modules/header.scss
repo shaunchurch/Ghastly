@@ -2,7 +2,7 @@
 
 header.site-head {
 	margin-bottom: $padding*2;
-	padding: 15% 0 !important;
+	padding: 5% 0 !important;
 	overflow: auto;
 	text-align: center;
 	// @include linear-gradient($colour-header-from, $colour-header-to);
@@ -14,14 +14,11 @@ header.site-head {
 
 	@media($small) {
 		background-size: 100%;
-		background-position: top center;
+		background-position: center center;
 		// height: 22.5em;
 	}
 }
 
-.post-image {
-	height: 22em;
-}
 .site-head {
 	text-align: center;
 }
@@ -35,16 +32,15 @@ header.site-head {
 	opacity: .1;
 	padding-top: 1.5em;
 	overflow: auto;
-
-
 }
 
 .blog-title {
 	display: block;
 	padding-top: 0.35em;
+	color: white;
 	// margin-bottom: 1.15em;
 	font-weight: 500;
-	text-shadow: 0px 1px 0px rgba(255,255,255,.15);
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
 }
 
 .in-proximity .post-header,
@@ -54,8 +50,9 @@ header.site-head {
 
 .blog-description {
 	font-weight: 200;
-	color: #000;
-	text-shadow: 0px 1px 1px rgba(0,0,0,.15);
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
 	font-size: 1em;
 	padding-top: 0.2em;
 	// text-align: center;
@@ -64,6 +61,7 @@ header.site-head {
 .site-head-content {
 	width: 100%;
 }
+
 // .site-head-content {
 // 	margin-top: 2.8em;
 
@@ -73,6 +71,6 @@ header.site-head {
 // }
 
 .blog-logo img {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 }

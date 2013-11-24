@@ -95,7 +95,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, h2.index {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -451,7 +451,7 @@ body {
   line-height: 1.5em;
   font-weight: 200; }
 
-h1,
+h1, h2.index,
 h2,
 h3,
 h4,
@@ -463,7 +463,7 @@ h6 {
   margin: 0;
   padding: 0; }
 
-h1 {
+h1, h2.index {
   font-size: 2.25em;
   line-height: 1.35em;
   padding-top: 0.3em;
@@ -472,7 +472,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   padding-top: .63em;
-  line-height: 2em;
+  line-height: 1.1em;
   margin-bottom: 0.35em;
   font-weight: 300; }
 
@@ -504,6 +504,10 @@ a {
   a:hover {
     color: black; }
 
+hr {
+  margin: 2em 0;
+  color: #f5f5f5; }
+
 header, footer {
   margin: 0 auto; }
 
@@ -517,7 +521,7 @@ header, footer {
 
 header.site-head {
   margin-bottom: 3em;
-  padding: 15% 0 !important;
+  padding: 5% 0 !important;
   overflow: auto;
   text-align: center;
   border-bottom: 1px solid whitesmoke;
@@ -527,10 +531,7 @@ header.site-head {
   @media (min-width: 50em) {
     header.site-head {
       background-size: 100%;
-      background-position: top center; } }
-
-.post-image {
-  height: 22em; }
+      background-position: center center; } }
 
 .site-head {
   text-align: center; }
@@ -549,8 +550,9 @@ header.site-head {
 .blog-title {
   display: block;
   padding-top: 0.35em;
+  color: white;
   font-weight: 500;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15); }
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
 
 .in-proximity .post-header,
 .in-proximity.post-header {
@@ -558,8 +560,9 @@ header.site-head {
 
 .blog-description {
   font-weight: 200;
-  color: #000;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 1em;
   padding-top: 0.2em; }
 
@@ -567,8 +570,8 @@ header.site-head {
   width: 100%; }
 
 .blog-logo img {
-  width: 100px;
-  height: 100px; }
+  width: 150px;
+  height: 150px; }
 
 #blog-logo {
   float: left; }
@@ -584,7 +587,6 @@ article .post-meta {
   font-size: 12px;
   padding-top: 0.75em;
   margin-bottom: -0.8em;
-  opacity: 0;
   -webkit-transition: opacity 750ms;
   -moz-transition: opacity 750ms;
   transition: opacity 750ms; }
@@ -606,20 +608,6 @@ section.author {
   border-top: 1px solid whitesmoke;
   border-bottom: 1px solid whitesmoke; }
 
-main.content.post-inset {
-  position: relative;
-  top: -17.5em;
-  background: white;
-  background-color: rgba(255, 255, 255, 0.4);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(10em, white));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), white 10em);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), white 10em);
-  padding: 0 1.5em;
-  border-radius: 5px; }
-  @media (min-width: 50em) {
-    main.content.post-inset {
-      padding: 0 3em; } }
-
 .pagination {
   text-align: center;
   color: #e6e6e6; }
@@ -640,7 +628,7 @@ pre {
   width: 100%;
   position: relative; }
 
-code {
+pre code {
   display: block;
   border: 1px solid whitesmoke;
   padding: 1.5em;
@@ -651,11 +639,11 @@ code {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (min-width: 50em) {
-    code {
+    pre code {
       width: 120%;
       margin-left: -10%; } }
   @media (min-width: 62em) {
-    code {
+    pre code {
       width: 150%;
       margin-left: -25%; } }
 
@@ -675,14 +663,6 @@ blockquote {
   text-align: center;
   color: #bbbbbb;
   font-style: italic; }
-  @media (min-width: 50em) {
-    blockquote {
-      width: 110%;
-      margin-left: -5%; } }
-  @media (min-width: 62em) {
-    blockquote {
-      width: 140%;
-      margin-left: -20%; } }
 
 blockquote p {
   margin: 0;
