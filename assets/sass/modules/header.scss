@@ -2,18 +2,25 @@
 
 header.site-head {
 	margin-bottom: $padding*2;
-	padding: $padding 0 $padding*2 0;
+	padding: 15% 0 !important;
 	overflow: auto;
+	text-align: center;
 	// @include linear-gradient($colour-header-from, $colour-header-to);
 	border-bottom: 1px solid $colour-divider;
-	background-size: 200% 100%;
-	background-position: center;
+	background-size: $tiny;
+	background-position: center center;
 	background-repeat: repeat-x;
+	// height: 12em;
 
 	@media($small) {
 		background-size: 100%;
-		background-position: top;
+		background-position: top center;
+		// height: 22.5em;
 	}
+}
+
+.post-image {
+	height: 22em;
 }
 .site-head {
 	text-align: center;
@@ -22,17 +29,22 @@ header.site-head {
 .post-header.is-index {
 	opacity: .6;
 }
+
 .post-header {
 	@include transition(opacity $animation-speed-medium);
 	opacity: .1;
 	padding-top: 1.5em;
 	overflow: auto;
 
-	.blog-title {
-		display: block;
-		padding-top: 0.35em;
-		margin-bottom: 1.15em;
-	}
+
+}
+
+.blog-title {
+	display: block;
+	padding-top: 0.35em;
+	// margin-bottom: 1.15em;
+	font-weight: 500;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.15);
 }
 
 .in-proximity .post-header,
@@ -42,7 +54,25 @@ header.site-head {
 
 .blog-description {
 	font-weight: 200;
-	color: #aaa;
-	// font-size: 1em;
+	color: #000;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.15);
+	font-size: 1em;
+	padding-top: 0.2em;
 	// text-align: center;
+}
+
+.site-head-content {
+	width: 100%;
+}
+// .site-head-content {
+// 	margin-top: 2.8em;
+
+// 	@media($small) {
+// 		margin-top: 5.8em;
+// 	}
+// }
+
+.blog-logo img {
+	width: 100px;
+	height: 100px;
 }

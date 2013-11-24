@@ -517,16 +517,20 @@ header, footer {
 
 header.site-head {
   margin-bottom: 3em;
-  padding: 1.5em 0 3em 0;
+  padding: 15% 0 !important;
   overflow: auto;
+  text-align: center;
   border-bottom: 1px solid whitesmoke;
-  background-size: 200% 100%;
-  background-position: center;
+  background-size: "min-width: 30em";
+  background-position: center center;
   background-repeat: repeat-x; }
   @media (min-width: 50em) {
     header.site-head {
       background-size: 100%;
-      background-position: top; } }
+      background-position: top center; } }
+
+.post-image {
+  height: 22em; }
 
 .site-head {
   text-align: center; }
@@ -541,10 +545,12 @@ header.site-head {
   opacity: .1;
   padding-top: 1.5em;
   overflow: auto; }
-  .post-header .blog-title {
-    display: block;
-    padding-top: 0.35em;
-    margin-bottom: 1.15em; }
+
+.blog-title {
+  display: block;
+  padding-top: 0.35em;
+  font-weight: 500;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15); }
 
 .in-proximity .post-header,
 .in-proximity.post-header {
@@ -552,7 +558,17 @@ header.site-head {
 
 .blog-description {
   font-weight: 200;
-  color: #aaa; }
+  color: #000;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  font-size: 1em;
+  padding-top: 0.2em; }
+
+.site-head-content {
+  width: 100%; }
+
+.blog-logo img {
+  width: 100px;
+  height: 100px; }
 
 #blog-logo {
   float: left; }
@@ -590,18 +606,32 @@ section.author {
   border-top: 1px solid whitesmoke;
   border-bottom: 1px solid whitesmoke; }
 
+main.content.post-inset {
+  position: relative;
+  top: -17.5em;
+  background: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(10em, white));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), white 10em);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), white 10em);
+  padding: 0 1.5em;
+  border-radius: 5px; }
+  @media (min-width: 50em) {
+    main.content.post-inset {
+      padding: 0 3em; } }
+
 .pagination {
   text-align: center;
   color: #e6e6e6; }
 
-img {
+article img {
   width: 100%; }
   @media (min-width: 50em) {
-    img {
+    article img {
       margin-left: -10%;
       width: 120%; } }
   @media (min-width: 62em) {
-    img {
+    article img {
       margin-left: -25%;
       width: 150%; } }
 

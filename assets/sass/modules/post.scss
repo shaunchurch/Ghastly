@@ -43,3 +43,17 @@ section.author {
 	border-top: 1px solid $colour-divider;
 	border-bottom: 1px solid $colour-divider;
 }
+
+main.content.post-inset {
+
+	position: relative;
+	top: -17.5em;
+	background: white;
+	@include linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,1) 10em);
+	padding: 0 $padding;
+	border-radius: $border-radius;
+
+	@media($small) {
+		padding: 0 $padding*2;
+	}
+}
