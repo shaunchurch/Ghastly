@@ -1,1 +1,10 @@
 // base.scss
+
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #efefef;
+    margin: 3.2em 0;
+    padding: 0;
+}
